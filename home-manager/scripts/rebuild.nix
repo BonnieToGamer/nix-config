@@ -5,32 +5,23 @@ set -e
 
 pushd ~/nix
 
-if [[ "$1" != "home" && "$1" != "" ]]; then
-	echo "Usage rebuild (home|[empty])"
-	popd
-	exit 0
-fi
-
-if ${pkgs.git}/bin/git diff --quiet '*.nix'; then
-	echo "No changes detected, exitin."
+if ${pkgs.git}/bin/git diff --quiet './nixos/*.nix'; then
+	echo "No changes detected, exiting."
 	popd
 	exit 0
 fi
 
 ${pkgs.git}/bin/git diff -U0 '*.nix'
+${pkgs.git}/bin/git add .
 
 commitMessage=""
 
-if [[ "$1" == "home" ]]; then
-	echo "Rebuilding home-manager"
-	${pkgs.home-manager}/bin/home-manager switch --flake ~/nix &>~/.home-manager-rebuild.log || (cat ~/.home-manager-rebuild.log | grep --color error && exit 1)
 
-	commitMessage="home-manager $(home-manager generations | head-n 1 | cut -d ' ' -f 1-5)"
-else
-	echo "Rebuilding NixOS"
-	sudo nixos-rebuild switch --flake ~/nix &>~/.nixos-rebuild.log || (cat ~/.nixos-rebuild.log | grep --color error && exit 1)
-	commitMessage=$(nixos-rebuild list-generations | grep current)
-fi
+echo "Rebuilding NixOS"
+sudo nixos-rebuild switch --flake ~/nix &>~/.nixos-rebuild.log || (cat ~/.nixos-rebuild.log | grep --color error && exit 1)
+commitMessage=$(nixos-rebuild list-generations | grep current)
+
+${pkgs.git}/bin/git reset ./home-manager
 
 git commit -am "$commitMessage"
 

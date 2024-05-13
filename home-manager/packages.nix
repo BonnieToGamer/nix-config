@@ -8,6 +8,7 @@
 	(with pkgs; [
 		neofetch
 		htop
+		libnotify
 	])
 
 	++
@@ -22,5 +23,6 @@
 		(import ./scripts/start-clonehero.nix { inherit pkgs-unstable; })
 		(import ./scripts/add-clonehero-song.nix { inherit pkgs; })
 		(import ./scripts/rebuild.nix { inherit pkgs; })
+		(import ./scripts/rebuild-home.nix { inherit pkgs; })
 	]);
 }
