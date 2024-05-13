@@ -5,8 +5,8 @@
 		shellAliases = let
 			flakePath = "~/nix";
 		in {
-			rebuild = "sudo nixos-rebuild switch --flake ${flakePath}";
-			rebuild-home = "home-manager switch --flake ${flakePath}";
+			#rebuild = "sudo nixos-rebuild switch --flake ${flakePath}";
+			#rebuild-home = "home-manager switch --flake ${flakePath}";
 			v = "vim";
 		};
 	};		
