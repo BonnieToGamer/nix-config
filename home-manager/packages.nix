@@ -24,5 +24,6 @@
 		(import ./scripts/add-clonehero-song.nix { inherit pkgs; })
 		(import ./scripts/rebuild.nix { inherit pkgs; })
 		(import ./scripts/rebuild-home.nix { inherit pkgs; })
+		(import ./scripts/powermenu.nix { inherit pkgs; })
 	]);
 }

@@ -10,12 +10,15 @@
 		firefox
 		alacritty
 		rofi-wayland
-		wofi
+		rofi-power-menu
 		mpv
 		discord
+		vesktop
 		gparted
 		gnome.gnome-disk-utility
 		cinnamon.nemo
+		spotify
+		audacity
 		
 		# coding stuff
 		vscode
@@ -35,11 +38,22 @@
 		swww
 		vim
 		p7zip
-		
+		radeontop
+		intel-gpu-tools
+		playerctl
+		qt6.full
+		qt6.qt5compat
+		qt6.qtdeclarative
+		qt6.qtsvg
+		libsForQt5.qt5.qtquickcontrols2
+		libsForQt5.qt5.qtgraphicaleffects
+
 		# gui utils
 		feh
 		mako
 		networkmanagerapplet
+		pavucontrol
+		easyeffects
 		
 		# Sound
 		pipewire
@@ -47,12 +61,15 @@
 		pamixer
 	
 		# GPU stuff
-		amdvlk
-		rocm-opencl-icd
-		glaxnimate
+		#amdvlk
+		#rocm-opencl-icd
+		#glaxnimate
 	
 		# Screenshotting
 		sway-contrib.grimshot
+
+		# Gaming
+		lutris
 
 		# Other
 		home-manager
@@ -68,6 +85,7 @@
 		wl-clipboard
 		xdg-desktop-portal-hyprland
 		waybar
+		xdg-utils
 	]);
 
 	fonts.packages = with pkgs; [

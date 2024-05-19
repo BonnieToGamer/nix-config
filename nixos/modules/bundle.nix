@@ -7,5 +7,9 @@
 		./sound.nix
 		./hyprland.nix
 		./opengl.nix
+		./nvidia.nix
+		./sddm.nix
+		./bluetooth.nix
+		./steam.nix
 	];
 }

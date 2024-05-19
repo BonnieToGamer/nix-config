@@ -7,14 +7,16 @@
 			"$mainMod" = "SUPER";		
 
 			monitor = [
-				"DP-4,2560x1440,1920x0,auto"
-				"HDMI-A-2,1920x1080,0x0,auto"
+				"DP-3,2560x1440@171,1920x0,auto"
+				"HDMI-A-1,1920x1080,0x0,auto"
 			];
 
 			env = [
 				"XDG_CURRENT_DESKTOP,Hyprland"
 				"XDG_SESSION_TYPE,wayland"
 				"XDG_SESSION_DESKTOP,Hyprland"
+				"WLR_DRM_DEVICES,$HOME/.config/hypr/AMDGpu:$HOME/.config/hypr/NVIDIAGpu"
+				"WLR_DRM_NO_ATOMIC,1"
 			];
 
 			debug = {
@@ -120,7 +122,7 @@
 				"$mainMod, M, exit,"
 				"$mainMod, E, exec, nemo"
 				"$mainMod, V, toggleFloating,"
-				"$mainMod, D, exec, wofi --show drun"
+				"$mainMod, D, exec, rofi -show drun -show-icons"
 				"$mainMod, P, pseudo,"
 				"$mainMod, J, togglesplit,"
 				"$mainMod SHIFT, S, exec, grimshot --notify copy area"
@@ -153,7 +155,18 @@
  				"$mainMod, 7, workspace, 7" 
 				"$mainMod, 8, workspace, 8" 
 				"$mainMod, 9, workspace, 9" 
-				"$mainMod, 0, workspace, 0" 
+				"$mainMod, 0, workspace, 0"
+
+				"$mainMod, KP_End,    workspace, 1"
+				"$mainMod, KP_Down,   workspace, 2" 
+				"$mainMod, KP_Next,   workspace, 3" 
+				"$mainMod, KP_Left,   workspace, 4" 
+				"$mainMod, KP_Begin,  workspace, 5" 
+				"$mainMod, KP_Right,  workspace, 6" 
+ 				"$mainMod, KP_Home,   workspace, 7" 
+				"$mainMod, KP_UP,     workspace, 8" 
+				"$mainMod, KP_Prior,  workspace, 9" 
+				"$mainMod, KP_Insert, workspace, 0"  
 
 
 				"$mainMod SHIFT, 1, movetoworkspace, 1"
@@ -175,6 +188,9 @@
 				", XF86AudioLowerVolume, exec, pamixer -d 5"
 				", XF86AudioMute, exec, pamixer -t"
 				", XF86AudioMicMute, exec, pamixer -- default-source -m"
+				", XF86AudioPlay, exec, playerctl play-pause"
+				", XF86AudioNext, exec, playerctl next"
+				", XF86AudioPrev, exec, playerctl previous"
 				
 				"$mainMod, F, fullscreen, 1"
 				"$mainMod Shift, F, fullscreen, 0"
