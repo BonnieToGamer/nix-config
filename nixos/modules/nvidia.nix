@@ -10,5 +10,5 @@
 	hardware.nvidia.open = false;
 	hardware.nvidia.nvidiaSettings = true;
 
-	hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.beta;
+	hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
 }
