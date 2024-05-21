@@ -1,8 +1,100 @@
-{ config, ... }: {
-	programs.rofi = let 
-		rasi_file = "${builtins.readFile ../../themes/rofi-squared-menu.rasi}";
-		in {
+{
+	programs.rofi = {
 		enable = true;
-		theme = "${builtins.replaceStrings [ "$$base00$$" "$$base01$$" "$$base02$$" "$$base03$$" "$$base04$$" "$$base05$$" "$$base06$$" "$$base07$$" "$$base08$$" "$$base09$$" "$$base0A$$" "$$base0B$$" "$$base0C$$" "$$base0D$$" "$$base0E$$"  ] [ config.colorScheme.colors.base00 config.colorScheme.colors.base01 config.colorScheme.colors.base02 config.colorScheme.colors.base03 config.colorScheme.colors.base04 config.colorScheme.colors.base05 config.colorScheme.colors.base06 config.colorScheme.colors.base07 config.colorScheme.colors.base08 config.colorScheme.colors.base09 config.colorScheme.colors.base0A config.colorScheme.colors.base0B config.colorScheme.colors.base0C config.colorScheme.colors.base0D config.colorScheme.colors.base0E ] rasi_file}"; 
+		#theme = ../../themes/rofi-squared-menu.rasi;
+		location = "center";
+		theme = {
+			"*" = {
+				font =   "FiraCode Nerd Font Medium 12";
+
+				bg0 =     "#333333";
+				bg1 =     "#474747";
+				fg0 =     "#D8DEE9";
+
+				accent-color =     "#BBCCDD";
+				urgent-color =     "#EBCB8B";
+
+				background-color =   "transparent";
+				text-color =         "@fg0";
+
+				margin  =    0;
+				padding =    0;
+				spacing =    0;
+			};
+
+			window = {
+				location =   "center";
+				width =      480;
+
+				background-color =   "@bg0";
+			};
+
+			inputbar = {
+				spacing =    "8px"; 
+				padding =    "8px";
+
+				background-color =   "@bg1";
+			};
+
+			prompt.vertical-align = "0.5";
+			entry.vertical-align = "0.5";
+			"element-icon".vertical-align = "0.5";
+			"element-text".vertical-align = "0.5";
+
+
+			prompt = {
+				text-color = "@accent-color";
+			};
+
+			textbox = {
+				padding =            "8px";
+				background-color =   "@bg1";
+			};
+
+			listview = {
+				padding =    "4px 0";
+				lines =      8;
+				columns =    1;
+
+				fixed-height =   true;
+			};
+
+			element = {
+				padding =    "8px";
+				spacing =    "8px";
+			};
+
+			"element normal normal" = {
+				text-color = "@fg0";
+			};
+
+			"element normal urgent" = {
+				text-color = "@urgent-color";
+			};
+
+			"element normal active" = {
+				text-color = "@accent-color";
+			};
+
+			"element selected" = {
+				text-color = "@bg0";
+			};
+
+			"element selected normal, element selected active" = {
+				background-color =   "@accent-color";
+			};
+
+			"element selected urgent" = {
+				background-color =   "@urgent-color";
+			};
+
+			element-icon = {
+				size =   "0.8em";
+			};
+
+			element-text = {
+				text-color = "inherit";
+			};
+		};
 	};
 }
