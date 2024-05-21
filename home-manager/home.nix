@@ -11,5 +11,5 @@
 		stateVersion = "23.11";
 	};
 	
-	colorScheme = inputs.nix-colors.colorSchemes.tokyo-city-dark;
+	colorScheme = inputs.nix-colors.colorSchemes.nord;
 }

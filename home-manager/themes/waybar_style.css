@@ -1,0 +1,174 @@
+@define-color background                #$$base00$$;
+@define-color workspace-button-hover    #$$base01$$;
+@define-color urgent                    #$$base08$$;
+@define-color light-background          #$$base04$$;
+@define-color battery-charge-plugged    #$$base07$$;
+@define-color workspace-white           #$$base06$$;
+@define-color black                     #$$base00$$;
+@define-color workspace-button-focused  #$$base06$$;
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    border: #33ccff;
+    border-radius: 4px;
+    font-family: "GoMono Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+window#waybar {
+    background-color: @background;
+    color: @workspace-white;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px @workspace-white;
+}
+
+#workspaces button {
+    padding: 0 0.3em;
+    background-color: transparent;
+    color: @workspace-white;
+}
+
+#workspaces button:hover {
+    background: @workspace-button-hover;
+}
+
+#workspaces button.focused {
+    background-color: @workspace-button-focused;
+    box-shadow: inset 0 -3px @workspace-white;
+}
+
+#workspaces button.urgent {
+    background-color: @urgent;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-power {
+    padding: 0 10px;
+    margin: 3px 3px;
+    color: @background;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#custom-power {
+    background-color: @light-background;
+}
+
+#clock {
+    background-color: @light-background;
+}
+
+#battery {
+    background-color: @light-background;
+    color: @background;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @workspace-white;
+    background-color: @battery-charge-plugged;
+}
+
+@keyframes blink {
+    to {
+        background-color: @workspace-white;
+        color: @black;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @urgent;
+    color: @workspace-white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: @workspace-button-hover;
+}
+
+#network {
+    background-color: @light-background;
+}
+
+#network.disconnected {
+    background-color: @urgent;
+}
+
+#pulseaudio {
+    background-color: @light-background;
+}
+
+#pulseaudio.muted {
+    background-color: @light-background;
+}
+
+#tray {
+    background-color: @light-background;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @urgent;
+}
+
+#language {
+    background: @light-background;
+    color: @background;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: @light-background;
+    color: @background;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: @workspace-button-hover;
+}
