@@ -4,7 +4,7 @@
 		displayManager = {
 			sddm.enable = true;
 			sddm.theme = "${import ../pkgs/sddm-flower-theme.nix { inherit pkgs; }}";
-			setupCommands = "xrandr --output HDMI-A-0 --off | /home/filip/xrandr-out.log";
+			setupCommands = "xrandr --output HDMI-A-1 --off | /home/filip/xrandr-out.log";
 		};
 	};
 }
