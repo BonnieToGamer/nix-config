@@ -1,17 +1,15 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, inputs, ... }: {
 	imports = [
 		./modules/bundle.nix
 		./packages.nix
+		inputs.nix-colors.homeManagerModules.default
 	];
 
 	home = {
 		username = "filip";
 		homeDirectory = "/home/filip";
 		stateVersion = "23.11";
-
-		#packages = with pkgs; [
-		#	neofetch
-		#	htop
-		#];
 	};
+	
+	colorScheme = inputs.nix-colors.colorSchemes.tokyo-city-dark;
 }
