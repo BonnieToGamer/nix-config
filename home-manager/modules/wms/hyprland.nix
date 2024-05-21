@@ -109,8 +109,8 @@
 			];
 
 			exec-once = [
-				"swww init"
-				"swww img ~/Wallpapers/hestia-nix.png"
+				#"swww init"
+				#"swww img ~/Wallpapers/hestia-nix.png"
 				"waybar"
 				"nm-applet --indicator"
 				"dunst"
