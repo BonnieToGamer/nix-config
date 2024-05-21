@@ -10,8 +10,8 @@
 			url = "github:nix-community/home-manager/release-23.11";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-
-		stylix.url = "github:danth/stylix";
+		
+		nix-colors.url = "github:misterio77/nix-colors";
 	};
 
 	outputs = { nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
@@ -29,7 +29,6 @@
 
 			modules = [ 
 				./nixos/configuration.nix
-				inputs.stylix.nixosModules.stylix	
 			];
 		};
 
@@ -39,6 +38,7 @@
 			modules = [ ./home-manager/home.nix ];
 			extraSpecialArgs = {
 				inherit pkgs-unstable;
+				inherit inputs;
 			};
 		}; 
 	};

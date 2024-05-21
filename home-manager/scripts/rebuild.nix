@@ -14,14 +14,13 @@ fi
 ${pkgs.git}/bin/git diff -U0 '*.nix'
 ${pkgs.git}/bin/git add .
 
-commitMessage=""
-
-
 echo "Rebuilding NixOS"
+
 sudo nixos-rebuild switch --flake ~/nix &>~/.nixos-rebuild.log || (cat ~/.nixos-rebuild.log | grep --color error && exit 1)
+
 commitMessage=$(nixos-rebuild list-generations | grep current)
 
-${pkgs.git}/bin/git reset ./home-manager
+${pkgs.git}/bin/git restore --staged ./home-manager
 
 git commit -am "$commitMessage"
 
