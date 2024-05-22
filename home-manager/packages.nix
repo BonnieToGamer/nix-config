@@ -10,8 +10,8 @@
 		htop
 		libnotify
 		nordic
-		nordzy-cursor-theme
 		nordzy-icon-theme
+		apple-cursor
 	])
 
 	++
