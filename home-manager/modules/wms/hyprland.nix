@@ -41,7 +41,7 @@
 			general = {
 				gaps_in = 5;
 				gaps_out = 20;
-				border_size = 4;
+				border_size = 2;
 				"col.active_border" = "rgba(${config.colorScheme.colors.base0D}ee) rgba(${config.colorScheme.colors.base0B}ee) 45deg";
 				"col.inactive_border" = "rgba(${config.colorScheme.colors.base01}aa)";
 
