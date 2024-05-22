@@ -2,6 +2,7 @@
 	imports = [
 		./bash.nix
 		./git.nix
+		./gtk.nix
 
 		./wms/hyprland.nix
 		./wms/waybar.nix
