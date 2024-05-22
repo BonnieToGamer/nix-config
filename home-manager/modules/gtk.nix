@@ -2,7 +2,7 @@
   gtk = {
       enable = true;
       theme.name = "Nordic";
-      cursorTheme.name = "nordzy-cursor-theme";
+      cursorTheme.name = "Nordzy-cursors";
       iconTheme.name = "Nordzy";
   };
 }
