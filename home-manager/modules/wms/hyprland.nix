@@ -1,5 +1,5 @@
 { config, ... }: {
-	wayland.windowManager.hyprland = {
+	wayland.windowManager.hyprland = with config.colorScheme.colors; {
 		enable = true;
 		xwayland.enable = true;
 
@@ -42,8 +42,8 @@
 				gaps_in = 5;
 				gaps_out = 20;
 				border_size = 2;
-				"col.active_border" = "rgba(${config.colorScheme.colors.base0D}ee) rgba(${config.colorScheme.colors.base0B}ee) 45deg";
-				"col.inactive_border" = "rgba(${config.colorScheme.colors.base01}aa)";
+				"col.active_border" = "rgba(${base0D}ee) rgba(${base0B}ee) 45deg";
+				"col.inactive_border" = "rgba(${base01}aa)";
 
 				layout = "dwindle";
 				
@@ -64,7 +64,7 @@
 				drop_shadow = true;
 				shadow_range = 4;
 				shadow_render_power = 3;
-				"col.shadow" = "rgba(${config.colorScheme.colors.base00}ee)";
+				"col.shadow" = "rgba(${base00}ee)";
 			};
 
 			animations = {
