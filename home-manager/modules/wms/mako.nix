@@ -1,20 +1,20 @@
-{
+{ config, ... }: {
 	services.mako = {
 		enable = true;
 		sort = "-time";
 		layer = "overlay";
-		textColor = "#bbccdd";
-		backgroundColor = "#333333";
+		textColor = "#${config.colorScheme.colors.base05}";
+		backgroundColor = "#${config.colorScheme.colors.base00}";
 		width = 400;
 		height = 60;
 		borderSize = 2;
-		borderColor = "#88c0d0";
+		borderColor = "#${config.colorScheme.colors.base04}";
 		borderRadius = 4;
 		icons = true;
 		maxIconSize = 64;
 		defaultTimeout = 5000;
 		ignoreTimeout = true;
-		font = "monospace 14";
+		font = "monospace 12";
 
 		extraConfig = ''
 [urgency=low]
