@@ -15,6 +15,6 @@ pkgs.stdenv.mkDerivation {
 		cp -R ./* $out/
 		rm $out/Backgrounds/background.png
 		cp -r ${img} $out/Backgrounds/backround.png
-		echo "test" >> $out/Backgrounds/test.txt
+		echo "test" >> $out/Backgrounds/somethingnobodyhasused.txt
 	'';
 }
