@@ -18,13 +18,13 @@
 
 		extraConfig = ''
 [urgency=low]
-border-color=#66aabb
+border-color=#${config.colorScheme.colors.base04}
 
 [urgency=normal]
-border-color=#bbccdd
+border-color=#${config.colorScheme.colors.base0B}
 
 [urgency=high]
-border-color=#ff6666
+border-color=#${config.colorScheme.colors.base08}
 default-timeout=0
 '';
 	};
