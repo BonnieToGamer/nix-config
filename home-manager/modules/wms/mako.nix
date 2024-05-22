@@ -1,14 +1,14 @@
 { config, ... }: {
-	services.mako = {
+	services.mako = with config.colorScheme.colors; {
 		enable = true;
 		sort = "-time";
 		layer = "overlay";
-		textColor = "#${config.colorScheme.colors.base05}";
-		backgroundColor = "#${config.colorScheme.colors.base00}";
+		textColor = "#${base05}";
+		backgroundColor = "#${base00}";
 		width = 400;
 		height = 60;
 		borderSize = 2;
-		borderColor = "#${config.colorScheme.colors.base04}";
+		borderColor = "#${base04}";
 		borderRadius = 4;
 		icons = true;
 		maxIconSize = 64;
@@ -18,13 +18,13 @@
 
 		extraConfig = ''
 [urgency=low]
-border-color=#${config.colorScheme.colors.base04}
+border-color=#${base04}
 
 [urgency=normal]
-border-color=#${config.colorScheme.colors.base04}
+border-color=#${base04}
 
 [urgency=high]
-border-color=#${config.colorScheme.colors.base08}
+border-color=#${base08}
 default-timeout=0
 '';
 	};
