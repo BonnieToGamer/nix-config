@@ -14,7 +14,7 @@
 		maxIconSize = 64;
 		defaultTimeout = 5000;
 		ignoreTimeout = true;
-		font = "monospace 12";
+		font = "monospace 10";
 
 		extraConfig = ''
 [urgency=low]
