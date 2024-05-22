@@ -21,7 +21,7 @@
 border-color=#${config.colorScheme.colors.base04}
 
 [urgency=normal]
-border-color=#${config.colorScheme.colors.base0B}
+border-color=#${config.colorScheme.colors.base04}
 
 [urgency=high]
 border-color=#${config.colorScheme.colors.base08}
