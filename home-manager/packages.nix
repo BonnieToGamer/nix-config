@@ -9,6 +9,9 @@
 		neofetch
 		htop
 		libnotify
+		nordic
+		nordzy-cursor-theme
+		nordzy-icon-theme
 	])
 
 	++
