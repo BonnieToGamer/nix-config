@@ -18,6 +18,7 @@
 		gnome.gnome-disk-utility
 		cinnamon.nemo
 		gnome.file-roller
+		cinnamon.nemo-fileroller
 		spotify
 		audacity
 		
