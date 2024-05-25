@@ -12,6 +12,10 @@
 		nordic
 		nordzy-icon-theme
 		apple-cursor
+		notepad-next
+		zathura
+		sxiv
+		mpv
 	])
 
 	++
