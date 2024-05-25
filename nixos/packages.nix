@@ -49,7 +49,7 @@
 		qt6.qtsvg
 		libsForQt5.qt5.qtquickcontrols2
 		libsForQt5.qt5.qtgraphicaleffects
-		nix-prefetch-github
+		nix-prefetch-git
 
 		# gui utils
 		mako
