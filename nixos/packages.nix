@@ -17,7 +17,6 @@
 		gparted
 		gnome.gnome-disk-utility
 		cinnamon.nemo
-		cinnamon.nemo-fileroller
 		gnome.file-roller
 		spotify
 		audacity
