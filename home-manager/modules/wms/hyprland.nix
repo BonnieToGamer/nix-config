@@ -134,10 +134,10 @@
 				"$mainMod, up,    movefocus, u"
 				"$mainMod, down,  movefocus, d"
 
-				"$mainMod, left,  swapwindow, l"
-				"$mainMod, right, swapwindow, r"
-				"$mainMod, up,    swapwindow, u"
-				"$mainMod, down,  swapwindow, d"
+				"$mainMod SHIFT, left,  swapwindow, l"
+				"$mainMod SHIFT, right, swapwindow, r"
+				"$mainMod SHIFT, up,    swapwindow, u"
+				"$mainMod SHIFT, down,  swapwindow, d"
 
 				# Window resizing                     X  Y
 				"$mainMod CTRL, left,  resizeactive, -60 0"
