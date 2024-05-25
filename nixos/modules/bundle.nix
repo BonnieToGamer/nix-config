@@ -11,5 +11,6 @@
 		./sddm.nix
 		./bluetooth.nix
 		./steam.nix
+		./hamachi.nix
 	];
 }

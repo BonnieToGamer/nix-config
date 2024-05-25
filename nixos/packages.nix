@@ -87,9 +87,6 @@
 		xdg-desktop-portal-hyprland
 		waybar
 		xdg-utils
-
-		logmein-hamachi
-		haguichi
 	]);
 
 	fonts.packages = with pkgs; [
