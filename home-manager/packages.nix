@@ -19,7 +19,7 @@
 
 		# gaming
 		minecraft
-		ferium
+		prismlauncher
 	])
 
 	++
@@ -36,6 +36,5 @@
 		(import ./scripts/rebuild.nix { inherit pkgs; })
 		(import ./scripts/rebuild-home.nix { inherit pkgs; })
 		(import ./scripts/powermenu.nix { inherit pkgs; })
-		(import ./pkgs/ferium-gui.nix { inherit pkgs; })
 	]);
 }
