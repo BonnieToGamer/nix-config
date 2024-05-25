@@ -16,6 +16,10 @@
 		zathura
 		sxiv
 		mpv
+
+		# gaming
+		minecraft
+		ferium
 	])
 
 	++
