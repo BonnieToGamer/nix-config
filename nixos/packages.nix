@@ -51,7 +51,6 @@
 		libsForQt5.qt5.qtgraphicaleffects
 
 		# gui utils
-		feh
 		mako
 		networkmanagerapplet
 		pavucontrol
