@@ -20,6 +20,7 @@
 		# gaming
 		minecraft
 		prismlauncher
+		grapejuice
 	])
 
 	++
