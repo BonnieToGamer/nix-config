@@ -5,5 +5,5 @@
 		driSupport32Bit = true;
 	};
 
-	services.xserver.videoDrivers = [ "amdgpu" "nvidia" ];
+	services.xserver.videoDrivers = [ "nvidia" ];
 }
