@@ -50,6 +50,7 @@
 		libsForQt5.qt5.qtquickcontrols2
 		libsForQt5.qt5.qtgraphicaleffects
 		nix-prefetch-git
+		wlr-randr
 
 		# gui utils
 		mako
