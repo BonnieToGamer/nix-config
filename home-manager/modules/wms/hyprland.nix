@@ -7,8 +7,8 @@
 			"$mainMod" = "SUPER";		
 
 			monitor = [
-				"DP-4,2560x1440@171,1920x0,auto"
-				"HDMI-A-2,1920x1080,0x0,auto"
+				"DP-1,2560x1440@171,1920x0,auto"
+				"HDMI-A-1,1920x1080,0x0,auto"
 			];
 
 			env = [
