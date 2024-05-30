@@ -116,6 +116,11 @@
 				"dunst"
 			];
 
+			workspace = [
+				"1, monitor:DP-1, default:true"
+				"2, monitor:HDMI-A-1, default:true"
+			];
+
 			bind = [
 				"$mainMod, Q, exec, alacritty"
 				"$mainMod, C, killactive,"
