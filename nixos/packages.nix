@@ -10,6 +10,7 @@
 		firefox
 		alacritty
 		rofi-wayland
+		wofi
 		rofi-power-menu
 		mpv
 		discord
