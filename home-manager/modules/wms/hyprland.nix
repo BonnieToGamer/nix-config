@@ -127,7 +127,7 @@
 				"$mainMod, M, exit,"
 				"$mainMod, E, exec, nemo"
 				"$mainMod, V, toggleFloating,"
-				"$mainMod, D, exec, wofi -show drun -show-icons"
+				"$mainMod, D, exec, rofi -show drun -show-icons"
 				"$mainMod, P, pseudo,"
 				"$mainMod, J, togglesplit,"
 				"$mainMod SHIFT, S, exec, grimshot --notify copy area"
