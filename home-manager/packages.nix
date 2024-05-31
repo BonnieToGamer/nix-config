@@ -16,6 +16,7 @@
 		zathura
 		sxiv
 		mpv
+		lmms
 
 		# gaming
 		minecraft
