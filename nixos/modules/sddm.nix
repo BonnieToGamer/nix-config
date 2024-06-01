@@ -4,7 +4,7 @@
 		displayManager = {
 			sddm.enable = true;
 			sddm.theme = "${import ../pkgs/sddm-flower-theme.nix { inherit pkgs; }}";
-			setupCommands = "echo test >> /home/filip/wlrrandr.log; ${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-0 --off &>> /home/filip/wlrrandr.log";
+			setupCommands = "${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-0 --off";
 		};
 	};
 }
