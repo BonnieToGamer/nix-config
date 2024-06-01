@@ -16,6 +16,7 @@
 		vesktop
 		gparted
 		gnome.gnome-disk-utility
+		gparted
 		cinnamon.nemo
 		gnome.file-roller
 		cinnamon.nemo-fileroller
