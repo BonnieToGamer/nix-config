@@ -12,5 +12,6 @@
 		./bluetooth.nix
 		./steam.nix
 		./hamachi.nix
+		./polkit.nix
 	];
 }
