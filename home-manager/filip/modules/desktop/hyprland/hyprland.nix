@@ -15,7 +15,7 @@
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
-        "WLR_DRM_DEVICES,$HOME/.config/hypr/NVIDIAGpu:$HOME/.config/hypr/AMDGpu"
+        "WLR_DRM_DEVICES,$HOME/.config/hypr/NVIDIAGpu"
         "WLR_DRM_NO_ATOMIC,1"
       ];
 
