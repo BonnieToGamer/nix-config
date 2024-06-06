@@ -73,6 +73,7 @@
 
     # Other
     home-manager
+    egl-wayland
   ])
 
   ++

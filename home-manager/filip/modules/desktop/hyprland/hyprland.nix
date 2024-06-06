@@ -15,8 +15,10 @@
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
-        "WLR_DRM_DEVICES,$HOME/.config/hypr/NVIDIAGpu"
         "WLR_DRM_NO_ATOMIC,1"
+        "LIBVA_DRIVER_NAME,nvidia"
+        "GBM_BACKEND,nvidia-drm"
+        "__GLX_VENDOR_LIBRARY_NAME,nvidia"
       ];
 
       debug = {
