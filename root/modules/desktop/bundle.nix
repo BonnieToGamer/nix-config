@@ -9,5 +9,6 @@
 		./sound.nix
 		./steam.nix
 		./xdg.nix
+		./spectrwm.nix
   ];
 }

@@ -22,6 +22,7 @@
 		notepad-next
 		zathura
 		sxiv
+    gpt4all
 
     libsForQt5.qt5.qtquickcontrols2
     libsForQt5.qt5.qtgraphicaleffects
@@ -59,6 +60,8 @@
     networkmanagerapplet
     pavucontrol
     easyeffects
+    dmenu
+    xlockmore
     
     # Sound
     pipewire
@@ -73,12 +76,13 @@
 
     # Other
     home-manager
-    egl-wayland
+    #egl-wayland
   ])
 
   ++
 
   (with pkgs-unstable; [
+    spectrwm
     hyprland
     hyprlock
     xwayland
@@ -86,7 +90,13 @@
     xdg-desktop-portal-hyprland
     waybar
     xdg-utils
-  ]);
+  ])
+
+  ++
+
+  (
+    (import ./scripts/bundle.nix { inherit pkgs;  inherit pkgs-unstable; })
+  );
 
   fonts.packages = with pkgs; [
     jetbrains-mono
