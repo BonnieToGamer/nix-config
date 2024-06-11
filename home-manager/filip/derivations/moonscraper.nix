@@ -8,8 +8,10 @@ pkgs.stdenv.mkDerivation {
 
 	installPhase = ''
     runHook preInstall
-
+    
     install -Dm755 "Moonscraper Chart Editor.x86_64" "$out/bin/Moonscraper Chart Editor.x86_64"
+    
+    mkdir -p $out/share/
     cp -r "Moonscraper Chart Editor_Data" "$out/share/Moonscraper Chart Editor_Data"
     cp -r "Custom Resources" "$out/share/Custom Resources"
     cp -r "Config" "$out/share/Config"
