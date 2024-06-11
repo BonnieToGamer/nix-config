@@ -53,7 +53,7 @@
           color = "$foreground";
           font_size = 18;
           font_family = "JetBrainsMono, Font Awesome 6 Free Solid";
-          position = "0, -50";
+          position = "0, 0";
           halign = "center";
           valign = "bottom";
         }
