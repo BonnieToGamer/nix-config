@@ -9,6 +9,6 @@
 		./sound.nix
 		./steam.nix
 		./xdg.nix
-		./nix-ld.nix
+		#./nix-ld.nix
   ];
 }
