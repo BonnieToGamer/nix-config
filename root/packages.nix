@@ -22,8 +22,7 @@
 		notepad-next
 		zathura
 		sxiv
-    gpt4all
-    distrobox
+    gpt4alls
 
     libsForQt5.qt5.qtquickcontrols2
     libsForQt5.qt5.qtgraphicaleffects
@@ -55,7 +54,6 @@
     wlr-randr
 		libnotify
     fzf
-    podman
 
     # gui utils
     mako
