@@ -55,7 +55,7 @@
     wlr-randr
 		libnotify
     fzf
-    docker
+    podman
 
     # gui utils
     mako
