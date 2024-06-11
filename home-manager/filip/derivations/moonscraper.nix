@@ -10,7 +10,7 @@ pkgs.stdenv.mkDerivation {
     mkdir -p $out/bin/
     mkdir -p $out/share/
 
-    install -Dm "Moonscraper Chart Editor.x86_64" "$out/bin/Moonscraper Chart Editor.x86_64"
+    install -Dm755 "Moonscraper Chart Editor.x86_64" "$out/bin/Moonscraper Chart Editor.x86_64"
     cp -r "Moonscraper Chart Editor_Data" "$out/share/Moonscraper Chart Editor_Data"
     cp -r "Custom Resources" "$out/share/Custom Resources"
     cp -r "Config" "$out/share/Config"
