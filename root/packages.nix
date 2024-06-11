@@ -54,6 +54,7 @@
     wlr-randr
 		libnotify
     fzf
+    distrobox
 
     # gui utils
     mako
