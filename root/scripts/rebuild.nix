@@ -5,7 +5,7 @@ set -e
 
 pushd ~/nix
 
-if ${pkgs.git}/bin/git diff --quiet './nixos/*.nix'; then
+if ${pkgs.git}/bin/git diff --quiet './root/*.nix'; then
 	echo "No changes detected, exiting."
 	popd
 	exit 0
@@ -16,7 +16,7 @@ ${pkgs.git}/bin/git add .
 
 echo "Rebuilding NixOS"
 
-sudo nixos-rebuild switch --flake ~/nix &>~/.nixos-rebuild.log || (cat ~/.nixos-rebuild.log | grep --color error && exit 1)
+sudo nixos-rebuild switch --flake ~/nix 2>&1 | tee ~/.nixos-rebuild.log || (exit 1)
 
 commitMessage=$(nixos-rebuild list-generations | grep current)
 

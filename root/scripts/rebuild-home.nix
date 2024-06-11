@@ -16,7 +16,7 @@ ${pkgs.git}/bin/git add .
 
 echo "Rebuilding home-manager"
 
-home-manager switch --flake ~/nix &>~/.home-manager-rebuild.log || (cat ~/.home-manager-rebuild.log | grep --color error && exit 1)
+home-manager switch --flake ~/nix 2>&1 | tee ~/.home-manager-rebuild.log || (exit 1)
 
 commitMessage="home-manager $(home-manager generations | head -n 1 | cut -d ' ' -f 1-5)"
 
