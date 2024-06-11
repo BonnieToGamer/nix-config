@@ -62,6 +62,8 @@
     easyeffects
     dmenu
     xlockmore
+    winetricks
+    wineWowPackages.waylandFull
     
     # Sound
     pipewire
