@@ -1,5 +1,5 @@
 { config, ... }: {
-  services.mako = with config.colorScheme.colors; {
+  services.mako = with config.colorScheme.palette; {
     enable = true;
     sort = "-time";
     layer = "overlay";

@@ -1,5 +1,5 @@
 { config, ... }: {
-  wayland.windowManager.hyprland = with config.colorScheme.colors; {
+  wayland.windowManager.hyprland = with config.colorScheme.palette; {
     enable = true;
     xwayland.enable = true;
 
