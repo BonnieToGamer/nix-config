@@ -9,7 +9,7 @@ in {
       cursorTheme = {
         package = notwaita-cursor;
         name = "Notwaita-Black";
-        size = 16;
+        size = 22;
       };
   };
 }
