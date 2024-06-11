@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 let 
   notwaita-cursor = import ../../derivations/notwaita-cursor.nix { inherit pkgs; };
 in {
