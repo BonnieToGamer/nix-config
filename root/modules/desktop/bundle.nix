@@ -5,10 +5,10 @@
 		./hyprland.nix
 		./network-manager.nix
 		./opengl.nix
-		./sddm.nix
+		./gdm.nix
 		./sound.nix
 		./steam.nix
 		./xdg.nix
-		./spectrwm.nix
+		#./spectrwm.nix
   ];
 }

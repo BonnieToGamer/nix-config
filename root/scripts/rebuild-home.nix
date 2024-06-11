@@ -20,7 +20,7 @@ home-manager switch --flake ~/nix &>~/.home-manager-rebuild.log || (cat ~/.home-
 
 commitMessage="home-manager $(home-manager generations | head -n 1 | cut -d ' ' -f 1-5)"
 
-${pkgs.git}/bin/git restore --staged ./nixos
+${pkgs.git}/bin/git restore --staged ./root
 
 git commit -am "$commitMessage"
 

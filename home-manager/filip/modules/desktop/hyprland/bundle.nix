@@ -1,6 +1,7 @@
 {
   imports = [
     ./hyprland.nix
+    ./hyprlock.nix
     ./mako.nix
     ./rofi.nix
     ./waybar.nix

@@ -1,6 +1,8 @@
 {
   services.xserver = {
     enable = true;
-    windowManager.spectrwm.enable = true;
+    windowManager.i3.enable = true;
   };
+
+  services.picom.enable = true;
 }
