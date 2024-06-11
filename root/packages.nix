@@ -23,6 +23,7 @@
 		zathura
 		sxiv
     gpt4all
+    distrobox
 
     libsForQt5.qt5.qtquickcontrols2
     libsForQt5.qt5.qtgraphicaleffects
@@ -54,7 +55,7 @@
     wlr-randr
 		libnotify
     fzf
-    distrobox
+    docker
 
     # gui utils
     mako
