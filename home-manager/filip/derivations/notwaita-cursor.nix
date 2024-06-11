@@ -1,5 +1,5 @@
 { pkgs }:
-pkgs.stdenv.fetchzip {
+pkgs.stdenv.mkDerivation {
 	name = "notwaita-cursor";
 	src = pkgs.fetchurl {
 		url = "https://github.com/ful1e5/notwaita-cursor/releases/download/v1.0.0-alpha1/Notwaita-Black.tar.xz";
@@ -10,6 +10,6 @@ pkgs.stdenv.fetchzip {
 
 	installPhase = ''
 		mkdir -p $out/share/icons/
-		tar -xf $src -d $out/share/icons/
+		tar -xf $src -C $out/share/icons/
 	'';
 }
