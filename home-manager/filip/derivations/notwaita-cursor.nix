@@ -9,6 +9,7 @@ pkgs.stdenv.fetchzip {
 	dontUnpack = true;
 
 	installPhase = ''
+		mkdir -p $out/share/icons/
 		tar -xf $src -d $out/share/icons/
 	'';
 }
