@@ -136,7 +136,6 @@
         "$mainMod, J, togglesplit,"
         "$mainMod SHIFT, S, exec, grimshot --notify copy area"
         "$mainMod, L, exec, hyprlock"
-        ", mouse:274, exec, "
 
 
         # Move focus with mainMod + arrow keys
