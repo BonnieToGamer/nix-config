@@ -6,10 +6,14 @@ pkgs.stdenv.mkDerivation {
 		sha256 = "01n9cqzbfl3ggl7ryxldlcs731542mr9ali14a8sx46j0yf76wbg";
 	};
 
-  dontUnpack = true;
-
 	installPhase = ''
-		mkdir -p $out
-		tar -xf $src -C $out
+    install -Dm "Moonscraper Chart Editor.x86_64" "$out/bin/Moonscraper Chart Editor.x86_64"
+    cp -r "Moonscraper Chart Editor_Data" "$out/share/Moonscraper Chart Editor_Data"
+    cp -r "Custom Resources" "$out/share/Custom Resources"
+    cp -r "Config" "$out/share/Config"
+
+    ln -s "$out/share/Moonscraper Chart Editor_Data" "$out/bin/Moonscraper Chart Editor_Data"
+    ln -s "$out/share/Custom Resources" "$out/bin/Custom Resources"
+    ln -s "$out/share/Config" "$out/bin/Config"
 	'';
 }
