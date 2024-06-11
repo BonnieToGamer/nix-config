@@ -30,7 +30,7 @@
         kb_variant = "";
         kb_options = "caps:escape";
         
-        follow_mouse = 1;
+        follow_mouse = 0;
 
         touchpad = {
           natural_scroll = false;
