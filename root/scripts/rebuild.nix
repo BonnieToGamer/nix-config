@@ -22,7 +22,7 @@ commitMessage=$(nixos-rebuild list-generations | grep current)
 
 ${pkgs.git}/bin/git restore --staged ./home-manager
 
-git commit -am "$commitMessage"
+git commit -m "$commitMessage"
 
 popd
 

@@ -22,7 +22,7 @@ commitMessage="home-manager $(home-manager generations | head -n 1 | cut -d ' ' 
 
 ${pkgs.git}/bin/git restore --staged ./root
 
-git commit -am "$commitMessage"
+git commit -m "$commitMessage"
 
 popd
 
