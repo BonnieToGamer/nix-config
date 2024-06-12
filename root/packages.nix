@@ -64,7 +64,7 @@
     xlockmore
     winetricks
     wineWowPackages.waylandFull
-    isoimagewriter
+    ventoy-full
     
     # Sound
     pipewire
