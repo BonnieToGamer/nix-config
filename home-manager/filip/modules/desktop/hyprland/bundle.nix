@@ -7,6 +7,6 @@
     ./waybar.nix
     ./gtk.nix
     ./xdg.nix
-    ./ags/ags.nix
+    ./ags.nix
   ];
 }
