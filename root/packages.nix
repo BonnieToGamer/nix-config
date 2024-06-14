@@ -65,7 +65,6 @@
     winetricks
     wineWowPackages.waylandFull
     ventoy-full
-    ags
     
     # Sound
     pipewire
