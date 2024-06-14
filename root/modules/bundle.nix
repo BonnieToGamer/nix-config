@@ -7,6 +7,6 @@
 		#./ssh.nix
 
 		# either add or switch with AMD GPU.
-    ./nvidia/bundle.nix
+    ./amd/bundle.nix
 	];
 }
