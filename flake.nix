@@ -11,7 +11,6 @@
     };
 
     nix-colors.url = "github:misterio77/nix-colors";
-    ags.url = "github:Aylur/ags";
   };
 
   outputs = { nixpkgs, nixpkgs-unstable, home-manager, ... } @inputs:
