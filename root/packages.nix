@@ -28,7 +28,7 @@
     libsForQt5.qt5.qtgraphicaleffects
 		
     # coding stuff
-    vscode
+    vscode-fhs
     gnumake
     gcc
     nodejs
