@@ -1,6 +1,6 @@
 {
   programs.ags = {
     enable = true;
-    configDir = ./static/ags;
+    #configDir = ./static/ags;
   };
 }

@@ -3,6 +3,7 @@
 		./modules/bundle.nix
 		./packages.nix
 		inputs.nix-colors.homeManagerModules.default
+		inputs.ags.homeManagerModules.default
 	];
 
 	home = {
