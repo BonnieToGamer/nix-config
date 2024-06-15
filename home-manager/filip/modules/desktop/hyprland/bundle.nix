@@ -7,6 +7,5 @@
     ./waybar.nix
     ./gtk.nix
     ./xdg.nix
-    ./ags.nix
   ];
 }
