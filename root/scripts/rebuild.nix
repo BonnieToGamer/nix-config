@@ -5,13 +5,13 @@ set -e
 
 pushd ~/nix
 
-if ${pkgs.git}/bin/git diff --quiet './root/*.nix'; then
+if ${pkgs.git}/bin/git diff --quiet './root/*'; then
 	echo "No changes detected, exiting."
 	popd
 	exit 0
 fi
 
-${pkgs.git}/bin/git diff -U0 '*.nix'
+${pkgs.git}/bin/git diff -U0 '*'
 ${pkgs.git}/bin/git add .
 
 echo "Rebuilding NixOS"
