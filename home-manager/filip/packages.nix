@@ -5,6 +5,8 @@
     nordzy-icon-theme
     apple-cursor
 
+    wl-color-picker
+
     # gaming
     prismlauncher
   ])
