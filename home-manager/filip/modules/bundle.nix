@@ -4,5 +4,6 @@
     #./desktop/spectrwm/bundle.nix
     ./bash.nix
     ./git.nix
+    ./udiskie.nix
   ];
 }
