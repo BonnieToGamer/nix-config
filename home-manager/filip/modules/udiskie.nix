@@ -1,5 +1,5 @@
 {
   services = {
-    usdiskie.enable = true;
+    udiskie.enable = true;
   };
 }
