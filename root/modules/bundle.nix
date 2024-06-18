@@ -8,5 +8,6 @@
 
 		# either add or switch with AMD GPU.
     ./amd/bundle.nix
+           ./udisks2.nix
 	];
 }
