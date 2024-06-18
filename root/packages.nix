@@ -19,10 +19,11 @@
     cinnamon.nemo-fileroller
     spotify
     audacity
-		notepad-next
-		zathura
-		sxiv
+    notepad-next
+    zathura
+    sxiv
     gpt4all
+    brasero
 
     libsForQt5.qt5.qtquickcontrols2
     libsForQt5.qt5.qtgraphicaleffects
