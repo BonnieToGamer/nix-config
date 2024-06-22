@@ -11,5 +11,6 @@
 		./xdg.nix
 		#./nix-ld.nix
 		./alvr.nix
+		./polkit.nix
   ];
 }
