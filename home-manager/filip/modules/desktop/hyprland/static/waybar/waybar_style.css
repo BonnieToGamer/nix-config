@@ -49,7 +49,7 @@ window#waybar.hidden {
     border-bottom: 3px solid @base06;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     background-color: @base03;
     border-bottom: 3px solid @base06;
 }
