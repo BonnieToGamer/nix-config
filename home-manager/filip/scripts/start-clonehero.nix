@@ -3,7 +3,7 @@ pkgs-unstable.writeShellScriptBin "start-clonehero" ''
 ulimit -n `ulimit -Hn`
 
 while true; do
-	${pkgs-unstable.clonehero}/bin/clonehero --force-wayland
+	${pkgs-unstable.clonehero}/bin/clonehero
 	if [ $? -eq 0 ]; then
 		break
 	fi
