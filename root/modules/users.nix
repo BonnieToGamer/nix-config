@@ -6,7 +6,7 @@
 		users.filip = {
 			isNormalUser = true;
 			description = "filip";
-			extraGroups = [ "networkmanager" "wheel" ];
+			extraGroups = [ "networkmanager" "wheel" "polkitd" ];
 			packages = with pkgs; [];
 		};
 	};
