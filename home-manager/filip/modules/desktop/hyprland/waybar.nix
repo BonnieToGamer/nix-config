@@ -33,8 +33,8 @@
             "8" = "8";
             
             urgent = "";
-            active = "";
-            default = "";
+            # active = "";
+            # default = "";
           };
         };
 
