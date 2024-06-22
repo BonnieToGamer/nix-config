@@ -1,0 +1,5 @@
+{
+  programs.alvr = {
+    enable = true;
+  };
+}
