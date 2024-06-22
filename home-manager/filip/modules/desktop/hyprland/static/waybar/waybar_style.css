@@ -46,7 +46,6 @@ window#waybar.hidden {
 #workspaces button:hover {
     background: @base02;
     box-shadow: inherit;
-    border-bottom: 3px solid @base06;
 }
 
 #workspaces button.active {
