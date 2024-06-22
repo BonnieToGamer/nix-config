@@ -10,11 +10,11 @@
         position = "top";
         height = 30;
         margin = "5 5 0 5";
-        spacing = 1;				
+        spacing = 1;	
 
         modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "hyprland/window" ];
-        modules-right = [ "pulseaudio" "network" "tray" "clock" "custom/power" ];
+        modules-right = [ "network" "tray" "pulseaudio" "clock" "custom/power" ];
 
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -51,8 +51,9 @@
         };
 
         clock = {
+          format = "{:%I:%M}";
           tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-          format-alt = "{:%Y-%m-%d}";
+          format-alt = "{:%b %d}";
         };
 
         network = {
@@ -65,19 +66,11 @@
         };
 
         pulseaudio = {
-          format = "{volume}% {icon} {format_source}";
-          format-muted = "󰝟 {format_source}";
-          format-bluetooth = "{volume}% {icon} {format_source}";
-          format-blueooth-muted = "󰝟 {icon} {format_source}";
-          format-source = "{volume}% ";
-          format-source-muted = "";
+          format = "{volume}% {icon}";
+          format-muted = "{volume}% 󰝟";
+          format-bluetooth = "{volume}% {icon}";
+          format-blueooth-muted = "󰝟 {icon}";
           format-icons = {
-            headphone = "󰋋";
-            hands-free = "󰋎";
-            headset = "󰋎";
-            phone = "";
-            portable = "";
-            car = "";
             default = ["" "" ""];
           };
 
@@ -89,12 +82,6 @@
           format-icons = "";
           exec-on-event = true;
           on-click = "powermenu";
-          tooltip = false;
-        };
-        
-        "custom/separator" = {
-          format = "{icon}";
-          format-icons = "|";
           tooltip = false;
         };
       };
