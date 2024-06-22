@@ -20,7 +20,7 @@
           disable-scroll = true;
           on-click = "activate";
           all-outputs = true;
-          format = "{icon}";
+          format = "{id}";
           format-icons = {
             # "1" = "";
             "1" = "1";
@@ -32,7 +32,7 @@
             "7" = "7";
             "8" = "8";
             
-            urgent = "";
+            # urgent = "";
             # active = "";
             # default = "";
           };
