@@ -50,6 +50,8 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
+    box-shadow: inherit;
+    text-shadow: inherit;
     background-color: @base03;
     border-bottom: 3px solid @base06;
 }
