@@ -18,9 +18,10 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: DejaVu-Sans-Mono, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "GoMono Nerd Font", FontAwesome, DejaVu Sans Mono, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     min-height: 0;
+    border-radius: 4px
 }
 
 window#waybar {
@@ -35,7 +36,7 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    padding: 0 8px;
+    padding: 0 0.3em;
     background-color: transparent;
     color: @base06;
     border-bottom: 3px solid transparent;
@@ -78,9 +79,9 @@ label:focus {
 }
 
 #custom-menu, #custom-power {
-    padding: 0 9px;
-    background: #88c0d0;
-    color: @base06;
+    padding: 0 8px;
+    background: @base06;
+    color: @base01;
 }
 
 #custom-menu button:hover {

@@ -111,7 +111,6 @@
         "swww init"
         "swww img ~/nix/home-manager/themes/hestia-nix.png"
         "waybar"
-        "nm-applet --indicator"
         "dunst"
       ];
 
