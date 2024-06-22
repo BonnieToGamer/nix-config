@@ -112,6 +112,7 @@
         "swww img ~/nix/home-manager/themes/hestia-nix.png"
         "waybar"
         "dunst"
+        "lxqt-policykit-agent"
         "steam -silent"
       ];
 
