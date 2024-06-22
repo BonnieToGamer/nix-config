@@ -67,6 +67,7 @@
     winetricks
     wineWowPackages.waylandFull
     ventoy-full
+    kdePackages.polkit-kde-agent-1
     
     # Sound
     pipewire
