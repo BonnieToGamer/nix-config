@@ -2,7 +2,7 @@
   wayland.windowManager.hyprland = with config.colorScheme.palette; {
     enable = true;
     xwayland.enable = true;
-    package = pkgs-unstable.hyprland;
+    #package = pkgs-unstable.hyprland;
 
     settings = {
       "$mainMod" = "SUPER";		

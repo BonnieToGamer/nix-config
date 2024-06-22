@@ -21,7 +21,6 @@
     font-family: "GoMono Nerd Font", FontAwesome, DejaVu Sans Mono, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     min-height: 0;
-    border-radius: 4px
 }
 
 window#waybar {
