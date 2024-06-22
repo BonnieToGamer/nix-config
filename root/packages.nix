@@ -55,6 +55,7 @@
     wlr-randr
 		libnotify
     fzf
+    fontpreview
 
     # gui utils
     mako
