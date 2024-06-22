@@ -104,9 +104,6 @@
       windowrulev2 = [
         "float, title:^(imv)$"
         "float, title:^(mpv)$"
-        
-        "stayfocused, class:(Rofi)$"
-        "forceinput, class:(Rofi)$"
       ];
 
       exec-once = [
@@ -128,7 +125,7 @@
         "$mainMod, M, exit,"
         "$mainMod, E, exec, nemo"
         "$mainMod, V, toggleFloating,"
-        "$mainMod, D, exec, rofi -show drun -show-icons & sleep 0.1; hyprctl dispatch focuswindow \"^(Rofi)\""
+        "$mainMod, D, exec, rofi -show drun -show-icons"
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
         "$mainMod SHIFT, S, exec, grimshot --notify copy area"
