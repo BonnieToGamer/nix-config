@@ -68,6 +68,7 @@
     wineWowPackages.waylandFull
     ventoy-full
     lxqt.lxqt-policykit
+    sidequest
     
     # Sound
     pipewire
