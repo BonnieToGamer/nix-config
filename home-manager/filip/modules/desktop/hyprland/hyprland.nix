@@ -46,7 +46,6 @@
 
         layout = "dwindle";
         
-        no_cursor_warps = false;
         allow_tearing = false;
       };
 
