@@ -101,6 +101,7 @@
   );
 
   fonts.packages = with pkgs; [
+    dejavu_fonts
     jetbrains-mono
     noto-fonts
     noto-fonts-emoji
