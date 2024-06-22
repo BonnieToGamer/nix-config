@@ -104,6 +104,7 @@
       windowrulev2 = [
         "float, title:^(imv)$"
         "float, title:^(mpv)$"
+        "float, title:^(rofi)$"
       ];
 
       exec-once = [
