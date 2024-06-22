@@ -86,8 +86,6 @@
   ++
 
   (with pkgs-unstable; [
-    spectrwm
-    hyprland
     hyprlock
     xwayland
     wl-clipboard
