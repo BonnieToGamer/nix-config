@@ -96,6 +96,7 @@
     xdg-desktop-portal-hyprland
     waybar
     xdg-utils
+    nix-ld-rs
   ])
 
   ++
