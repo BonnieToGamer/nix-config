@@ -7,6 +7,6 @@
     ./waybar.nix
     ./gtk.nix
     ./xdg.nix
-    ./eww.nix
+    #./eww.nix
   ];
 }

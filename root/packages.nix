@@ -89,7 +89,6 @@
   ++
 
   (with pkgs-unstable; [
-    hyprland
     hyprlock
     xwayland
     wl-clipboard

@@ -1,4 +1,5 @@
 { config, pkgs-unstable, ... }: {
+  
   wayland.windowManager.hyprland = with config.colorScheme.palette; {
     enable = true;
     xwayland.enable = true;
@@ -16,6 +17,7 @@
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
+        "NIXOS_OZONE_WL,1"
       ];
 
       debug = {
@@ -83,10 +85,6 @@
       dwindle = {
         pseudotile = true;
         preserve_split = true;
-      };
-
-      master = {
-        new_is_master = true;
       };
 
       gestures = {

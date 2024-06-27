@@ -16,7 +16,8 @@
   outputs = { nixpkgs, nixpkgs-unstable, home-manager, ... } @inputs:
     let 
       system = "x86_64-linux";
-      commonArgs = { inherit system; config.allowUnfree = true; };
+      custom-overlays = import ./overlays/bundle.nix;
+      commonArgs = { inherit system; config.allowUnfree = true; overlays = custom-overlays; };
       pkgs = import nixpkgs commonArgs;
       pkgs-unstable = import nixpkgs-unstable commonArgs;
     in 
