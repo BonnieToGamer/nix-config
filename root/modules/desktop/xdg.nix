@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   xdg = {
     portal.enable = true;
-    extra-packages = [ xdg-desktop-portal-gtk ];
+    extra-packages = [ pkgs.xdg-desktop-portal-gtk ];
   };
 }
