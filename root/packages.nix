@@ -24,6 +24,7 @@
     sxiv
     gpt4all
     brasero
+    protonvpn-gui
 
     libsForQt5.qt5.qtquickcontrols2
     libsForQt5.qt5.qtgraphicaleffects
