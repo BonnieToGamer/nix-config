@@ -37,6 +37,7 @@
     python
     godot_4
     godot_4-export-templates
+    openjdk
 
     # cli utils
     fastfetch
