@@ -107,7 +107,7 @@
 
       exec-once = [
         "swww init"
-        "swww img ~/nix/home-manager/themes/hestia-nix.png"
+        "swww img ~/nix/home-manager/themes/crow.png"
         "waybar"
         "dunst"
         "lxqt-policykit-agent"
