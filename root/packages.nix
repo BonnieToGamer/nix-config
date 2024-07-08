@@ -97,7 +97,6 @@
     xdg-desktop-portal-hyprland
     waybar
     xdg-utils
-    corectrl
   ])
 
   ++
