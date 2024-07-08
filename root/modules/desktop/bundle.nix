@@ -12,5 +12,6 @@
 		#./nix-ld.nix
 		./alvr.nix
 		./polkit.nix
+		./corectrl.nix
   ];
 }
