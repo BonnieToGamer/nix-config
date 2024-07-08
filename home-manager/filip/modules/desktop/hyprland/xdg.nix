@@ -13,6 +13,7 @@
       "x-scheme-handler/http" = "firefox.desktop";
       "x-scheme-handler/https" = "firefox.desktop";
       "x-scheme-handler/mailto" = "firefox.desktop";
+      "inode/directory" = "nemo.desktop";
     };
   };
 }
