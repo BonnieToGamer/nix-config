@@ -25,6 +25,7 @@
     gpt4all
     brasero
     protonvpn-gui
+    freefilesync
 
     libsForQt5.qt5.qtquickcontrols2
     libsForQt5.qt5.qtgraphicaleffects
